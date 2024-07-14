@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YummyExam</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div>
+        <main class=" d-flex justify-content-center">
+            <div class="loading">
+                <span class="loader"></span>
+            </div>
+            <div class="container">
+                <div class="row py-5 g-4 d-flex" id="rowData">
+                </div>
+                <div id="description"></div>
+                <div id="search">
+                    <div class="container w-100">
+                        <div class="row py-4 ">
+                            <div class="col-md-6 ">
+                                <input id="search-by-name" class="form-control bg-transparent text-white" type="text"
+                                    placeholder="Search By Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input id="filter-by-letter" maxlength="1" class="form-control bg-transparent text-white" type="text"
+                                    placeholder="Search By First Letter">
+                            </div>
+                        </div>
+                        <div class="row py-5 g-4 d-flex" id="rowData2"></div>
+                    </div>
+                </div>
+                <div id="categories">
+                    <div class="row py-5 g-4 d-flex" id="rowData3">
+                    </div>
+                </div>
+                <div id="area">
+                    <div class="row py-5 g-4 d-flex" id="rowData4">
+                    </div>
+                </div>
+                <div id="ingredients">
+                    <div class="row py-5 g-4 d-flex" id="rowData5">
+                    </div>
+                </div>
+                <div id="contact-us" class="d-flex justify-content-center align-items-center">
+                    <div class="container w-75 text-center">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" placeholder="Enter Your Name">
+                                <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control " placeholder="Enter Your Email">
+                                <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="phone" maxlength="12" type="text" class="form-control " placeholder="Enter Your Phone">
+                                <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="age" type="number" class="form-control " placeholder="Enter Your Age">
+                                <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="password" maxlength="8" type="password" class="form-control " placeholder="Enter Your Password">
+                                <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="repassword" maxlength="8" type="password" class="form-control " placeholder="Repassword">
+                                <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="submitBtn" class="btn btn-outline-danger px-2 mt-3 disabled">Submit</button>
+                    </div>
+                </div>
+        </main>
+
+        <aside class="side-menu d-flex">
+
+            <div class="inner-menu">
+                <ul class="nav flex-column animate__animated ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#area">Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#ingredients">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe foot-icon"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon px-2">
+                <div>
+                    <img class="logo" src="images/logo.png" alt="logo">
+                </div>
+                <i class="fa-solid open-close-icon fa-2x fa-x"></i>
+                <!-- <i class="fa-solid close-icon fa-2x fa-bars"></i> -->
+                <div class="groupe-icon">
+                    <i class="fa-solid fa-globe d-block my-2"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+
+</body>
+
+</html>
